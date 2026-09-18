@@ -6,12 +6,11 @@ export const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
 
   const footerLinks = [
-    { label: "Home", href: "#hero" },
-    { label: "Features", href: "#features" },
-    { label: "Pipeline", href: "#pipeline" },
-    { label: "Download", href: "#download" },
-    { label: "Privacy Policy", href: "#" },
-    { label: "Terms & Conditions", href: "#" },
+    { label: "Home", href: "/" },
+    { label: "Contact", href: "/contact" },
+    { label: "Terms & Conditions", href: "/#terms" },
+    { label: "Privacy Policy", href: "/#privacy" },
+    { label: "Delete Account", href: "/#delete-account" },
   ];
 
   return (
@@ -33,7 +32,7 @@ export const Footer: React.FC = () => {
               </span>
             </div>
             <p className="text-sm text-[#4b5563] max-w-[40ch] leading-relaxed">
-              Professional AI Voice Studio at your fingertips. Next-generation neural audio synthesis.
+              Professional AI Voice Studio at your fingertips.
             </p>
           </div>
 
@@ -51,13 +50,13 @@ export const Footer: React.FC = () => {
           </div>
         </div>
 
-        {/* Bottom Strip */}
+        {/* Bottom Footer Strip */}
         <div className="pt-6 border-t border-[#f3f4f6] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#575e70]">
           <p>© {currentYear} Fish Labs Inc. All rights reserved.</p>
           <div className="flex items-center gap-2">
             <span className="w-1.5 h-1.5 rounded-full bg-[#f46117]" />
             <span className="font-mono text-[11px] uppercase tracking-wider">
-              Acoustic Precision Architecture v3.4
+              Acoustic Precision Architecture
             </span>
           </div>
         </div>
