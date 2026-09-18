@@ -8,7 +8,7 @@ export const Footer: React.FC = () => {
   const footerLinks = [
     { label: "Home", href: "/" },
     { label: "Contact", href: "/contact" },
-    { label: "Terms & Conditions", href: "/#terms" },
+    { label: "Terms & Conditions", href: "/terms-and-conditions" },
     { label: "Privacy Policy", href: "/#privacy" },
     { label: "Delete Account", href: "/#delete-account" },
   ];

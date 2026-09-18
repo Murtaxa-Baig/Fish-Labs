@@ -14,7 +14,7 @@ export const Header: React.FC = () => {
   const navLinks = [
     { label: "Home", href: "/" },
     { label: "Contact", href: "/contact" },
-    { label: "Terms & Conditions", href: "/#terms" },
+    { label: "Terms & Conditions", href: "/terms-and-conditions" },
     { label: "Privacy Policy", href: "/#privacy" },
   ];
 
@@ -44,6 +44,8 @@ export const Header: React.FC = () => {
                 ? pathname === "/"
                 : link.href === "/contact"
                 ? pathname === "/contact"
+                : link.href === "/terms-and-conditions"
+                ? pathname === "/terms-and-conditions"
                 : false;
 
             return (
@@ -97,6 +99,8 @@ export const Header: React.FC = () => {
                 ? pathname === "/"
                 : link.href === "/contact"
                 ? pathname === "/contact"
+                : link.href === "/terms-and-conditions"
+                ? pathname === "/terms-and-conditions"
                 : false;
 
             return (
