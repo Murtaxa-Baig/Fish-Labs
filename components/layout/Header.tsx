@@ -15,7 +15,7 @@ export const Header: React.FC = () => {
     { label: "Home", href: "/" },
     { label: "Contact", href: "/contact" },
     { label: "Terms & Conditions", href: "/terms-and-conditions" },
-    { label: "Privacy Policy", href: "/#privacy" },
+    { label: "Privacy Policy", href: "/privacy-policy" },
   ];
 
   return (
@@ -46,6 +46,8 @@ export const Header: React.FC = () => {
                 ? pathname === "/contact"
                 : link.href === "/terms-and-conditions"
                 ? pathname === "/terms-and-conditions"
+                : link.href === "/privacy-policy"
+                ? pathname === "/privacy-policy"
                 : false;
 
             return (
@@ -101,6 +103,8 @@ export const Header: React.FC = () => {
                 ? pathname === "/contact"
                 : link.href === "/terms-and-conditions"
                 ? pathname === "/terms-and-conditions"
+                : link.href === "/privacy-policy"
+                ? pathname === "/privacy-policy"
                 : false;
 
             return (

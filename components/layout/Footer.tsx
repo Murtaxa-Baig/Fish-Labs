@@ -9,7 +9,7 @@ export const Footer: React.FC = () => {
     { label: "Home", href: "/" },
     { label: "Contact", href: "/contact" },
     { label: "Terms & Conditions", href: "/terms-and-conditions" },
-    { label: "Privacy Policy", href: "/#privacy" },
+    { label: "Privacy Policy", href: "/privacy-policy" },
     { label: "Delete Account", href: "/#delete-account" },
   ];
 
