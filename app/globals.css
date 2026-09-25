@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #f46117;
-  --color-primary-hover: #dc5511;
-  --color-primary-container: #cb4a00;
-  --color-primary-fixed: #ffdbce;
-  --color-primary-fixed-dim: #ffb599;
+  --color-primary: #2084ff;
+  --color-primary-hover: #1a6fe0;
+  --color-primary-container: #155cc4;
+  --color-primary-fixed: #e6f0ff;
+  --color-primary-fixed-dim: #d4e5ff;
 
   --color-surface-canvas: #fafafa;
   --color-surface-dim: #dadada;

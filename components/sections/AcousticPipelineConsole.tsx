@@ -11,7 +11,7 @@ export const AcousticPipelineConsole: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             {/* Left Content Column */}
             <div className="lg:col-span-5 flex flex-col gap-4">
-              <span className="text-xs font-semibold text-[#f46117] uppercase tracking-wider">
+              <span className="text-xs font-semibold text-[#2084ff] uppercase tracking-wider">
                 Acoustic Pipeline
               </span>
               <h3 className="text-2xl md:text-3xl font-bold text-[#111827] tracking-tight leading-tight">
@@ -44,7 +44,7 @@ export const AcousticPipelineConsole: React.FC = () => {
               {/* Header Bar */}
               <div className="flex items-center justify-between text-xs text-[#575e70] font-medium border-b border-[#e2e2e2] pb-2">
                 <span className="flex items-center gap-2">
-                  <span className="w-2 h-2 rounded-full bg-[#f46117]" />
+                  <span className="w-2 h-2 rounded-full bg-[#2084ff]" />
                   Neural Waveform Comparison
                 </span>
                 <span className="font-mono text-[11px]">
@@ -77,24 +77,24 @@ export const AcousticPipelineConsole: React.FC = () => {
               {/* Synthesized Output Bar Card */}
               <div className="bg-white p-4 rounded-lg border border-[#e5e7eb] shadow-xs flex flex-col gap-2">
                 <div className="flex justify-between items-center text-xs font-medium">
-                  <span className="text-[#f46117] font-semibold">
+                  <span className="text-[#2084ff] font-semibold">
                     Fish Labs Synthesized Output
                   </span>
-                  <span className="text-[#f46117] font-mono text-[11px] font-bold">
+                  <span className="text-[#2084ff] font-mono text-[11px] font-bold">
                     99.8% Match
                   </span>
                 </div>
                 <div className="h-8 flex items-center gap-1">
-                  <div className="flex-1 bg-[#ffdbce] rounded h-3" />
-                  <div className="flex-1 bg-[#ffdbce] rounded h-5" />
-                  <div className="flex-1 bg-[#f46117] rounded h-7" />
-                  <div className="flex-1 bg-[#f46117] rounded h-4" />
-                  <div className="flex-1 bg-[#f46117] rounded h-8" />
-                  <div className="flex-1 bg-[#f46117] rounded h-6" />
-                  <div className="flex-1 bg-[#f46117] rounded h-7" />
-                  <div className="flex-1 bg-[#ffdbce] rounded h-3" />
-                  <div className="flex-1 bg-[#ffdbce] rounded h-5" />
-                  <div className="flex-1 bg-[#ffdbce] rounded h-2" />
+                  <div className="flex-1 bg-[#e6f0ff] rounded h-3" />
+                  <div className="flex-1 bg-[#e6f0ff] rounded h-5" />
+                  <div className="flex-1 bg-[#2084ff] rounded h-7" />
+                  <div className="flex-1 bg-[#2084ff] rounded h-4" />
+                  <div className="flex-1 bg-[#2084ff] rounded h-8" />
+                  <div className="flex-1 bg-[#2084ff] rounded h-6" />
+                  <div className="flex-1 bg-[#2084ff] rounded h-7" />
+                  <div className="flex-1 bg-[#e6f0ff] rounded h-3" />
+                  <div className="flex-1 bg-[#e6f0ff] rounded h-5" />
+                  <div className="flex-1 bg-[#e6f0ff] rounded h-2" />
                 </div>
               </div>
 

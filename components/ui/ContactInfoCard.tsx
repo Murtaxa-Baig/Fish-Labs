@@ -24,7 +24,7 @@ export const ContactInfoCard: React.FC<ContactInfoCardProps> = ({
       {href ? (
         <a
           href={href}
-          className="text-sm font-semibold text-[#111827] hover:text-[#f46117] transition-colors"
+          className="text-sm font-semibold text-[#111827] hover:text-[#2084ff] transition-colors"
         >
           {value}
         </a>

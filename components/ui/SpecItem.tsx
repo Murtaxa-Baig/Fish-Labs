@@ -14,7 +14,7 @@ export const SpecItem: React.FC<SpecItemProps> = ({
   if (variant === "checklist") {
     return (
       <div className="flex items-center gap-2.5 text-sm text-[#111827]">
-        <span className="w-1.5 h-1.5 rounded-full bg-[#f46117] shrink-0" />
+        <span className="w-1.5 h-1.5 rounded-full bg-[#2084ff] shrink-0" />
         <span>{text}</span>
       </div>
     );
@@ -22,7 +22,7 @@ export const SpecItem: React.FC<SpecItemProps> = ({
 
   return (
     <div className="flex items-center gap-1.5 text-xs text-[#575e70]">
-      <span className="text-[#f46117] shrink-0">{icon}</span>
+      <span className="text-[#2084ff] shrink-0">{icon}</span>
       <span>{text}</span>
     </div>
   );

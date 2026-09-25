@@ -20,7 +20,7 @@ export const MetricCard: React.FC<MetricCardProps> = ({
       </span>
       <span
         className={`text-4xl font-bold tracking-tight ${
-          highlightValue ? "text-[#f46117]" : "text-[#111827]"
+          highlightValue ? "text-[#2084ff]" : "text-[#111827]"
         }`}
       >
         {value}

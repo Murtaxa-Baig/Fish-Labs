@@ -54,7 +54,7 @@ export const Footer: React.FC = () => {
         <div className="pt-6 border-t border-[#f3f4f6] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#575e70]">
           <p>© {currentYear} Fish Labs Inc. All rights reserved.</p>
           <div className="flex items-center gap-2">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#f46117]" />
+            <span className="w-1.5 h-1.5 rounded-full bg-[#2084ff]" />
             <span className="font-mono text-[11px] uppercase tracking-wider">
               Acoustic Precision Architecture
             </span>

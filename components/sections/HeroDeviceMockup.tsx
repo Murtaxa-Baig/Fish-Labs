@@ -73,7 +73,7 @@ export const HeroDeviceMockup: React.FC = () => {
         {/* Top App Header */}
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="w-7 h-7 rounded-lg bg-[#f46117] flex items-center justify-center text-white shadow-xs">
+            <div className="w-7 h-7 rounded-lg bg-[#2084ff] flex items-center justify-center text-white shadow-xs">
               <Activity className="w-4 h-4" />
             </div>
             <div>
@@ -109,7 +109,7 @@ export const HeroDeviceMockup: React.FC = () => {
                   key={idx}
                   className={`w-1 rounded-full transition-all duration-200 ${
                     isPrimary
-                      ? "bg-[#f46117]"
+                      ? "bg-[#2084ff]"
                       : isDark
                       ? "bg-[#111827]"
                       : "bg-[#e2e2e2]"
@@ -146,7 +146,7 @@ export const HeroDeviceMockup: React.FC = () => {
               max="100"
               value={pitchShift}
               onChange={(e) => setPitchShift(Number(e.target.value))}
-              className="w-full h-1.5 bg-[#e5e7eb] accent-[#f46117] rounded-lg appearance-none cursor-pointer"
+              className="w-full h-1.5 bg-[#e5e7eb] accent-[#2084ff] rounded-lg appearance-none cursor-pointer"
             />
           </div>
 
@@ -182,7 +182,7 @@ export const HeroDeviceMockup: React.FC = () => {
               max="100"
               value={clarity}
               onChange={(e) => setClarity(Number(e.target.value))}
-              className="w-full h-1.5 bg-[#e5e7eb] accent-[#f46117] rounded-lg appearance-none cursor-pointer"
+              className="w-full h-1.5 bg-[#e5e7eb] accent-[#2084ff] rounded-lg appearance-none cursor-pointer"
             />
           </div>
         </div>
@@ -192,7 +192,7 @@ export const HeroDeviceMockup: React.FC = () => {
           <div className="flex items-center gap-2.5">
             <button
               onClick={() => setIsPlaying(!isPlaying)}
-              className="w-9 h-9 rounded-full bg-[#f46117] text-white flex items-center justify-center shadow-sm hover:bg-[#dc5511] transition-transform active:scale-95 cursor-pointer"
+              className="w-9 h-9 rounded-full bg-[#2084ff] text-white flex items-center justify-center shadow-sm hover:bg-[#1a6fe0] transition-transform active:scale-95 cursor-pointer"
               aria-label={isPlaying ? "Pause audio" : "Play audio"}
             >
               {isPlaying ? (

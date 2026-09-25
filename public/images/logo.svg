@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 36" fill="none">
-  <rect width="32" height="32" rx="8" fill="#F46117"/>
+  <rect width="32" height="32" rx="8" fill="#2084FF"/>
   <!-- Fish + Acoustic Waveform Icon -->
   <path d="M8 16C8 12.5 11 10 15 10C19.5 10 24 16 24 16C24 16 19.5 22 15 22C11 22 8 19.5 8 16Z" stroke="#FFFFFF" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
   <path d="M22 13.5L25 10M22 18.5L25 22" stroke="#FFFFFF" stroke-width="1.75" stroke-linecap="round"/>

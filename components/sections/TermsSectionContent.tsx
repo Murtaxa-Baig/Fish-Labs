@@ -36,7 +36,7 @@ export const TermsSectionContent: React.FC = () => {
               <span>•</span>
               <span>Last Updated: March 2025</span>
               <span>•</span>
-              <span className="text-[#f46117] font-semibold">
+              <span className="text-[#2084ff] font-semibold">
                 Version 2.4.0 Studio Edition
               </span>
             </div>
@@ -59,7 +59,7 @@ export const TermsSectionContent: React.FC = () => {
 
           {/* Section 1 */}
           <section id="acceptance" className="scroll-mt-32 flex flex-col gap-4">
-            <span className="text-xs font-semibold text-[#f46117] tracking-wider uppercase">
+            <span className="text-xs font-semibold text-[#2084ff] tracking-wider uppercase">
               01 / Agreement
             </span>
             <h2 className="text-2xl font-bold text-[#111827] tracking-tight">
@@ -80,7 +80,7 @@ export const TermsSectionContent: React.FC = () => {
 
           {/* Section 2: Subscriptions & Billing */}
           <section id="subscription-billing" className="scroll-mt-32 flex flex-col gap-6">
-            <span className="text-xs font-semibold text-[#f46117] tracking-wider uppercase">
+            <span className="text-xs font-semibold text-[#2084ff] tracking-wider uppercase">
               02 / Financial Mechanics
             </span>
             <h2 className="text-2xl font-bold text-[#111827] tracking-tight">
@@ -95,7 +95,7 @@ export const TermsSectionContent: React.FC = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="flex flex-col gap-1.5">
                   <div className="flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#f46117] shrink-0" />
+                    <span className="w-2 h-2 rounded-full bg-[#2084ff] shrink-0" />
                     <h4 className="text-xs font-semibold text-[#111827] uppercase tracking-wide">
                       Non-Refundable Subscriptions
                     </h4>
@@ -108,7 +108,7 @@ export const TermsSectionContent: React.FC = () => {
 
                 <div className="flex flex-col gap-1.5">
                   <div className="flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#f46117] shrink-0" />
+                    <span className="w-2 h-2 rounded-full bg-[#2084ff] shrink-0" />
                     <h4 className="text-xs font-semibold text-[#111827] uppercase tracking-wide">
                       Cancellation Policy
                     </h4>
@@ -129,7 +129,7 @@ export const TermsSectionContent: React.FC = () => {
 
           {/* Section 3: Device Permissions */}
           <section id="device-permissions" className="scroll-mt-32 flex flex-col gap-6">
-            <span className="text-xs font-semibold text-[#f46117] tracking-wider uppercase">
+            <span className="text-xs font-semibold text-[#2084ff] tracking-wider uppercase">
               03 / Hardware &amp; Sandbox
             </span>
             <h2 className="text-2xl font-bold text-[#111827] tracking-tight">
@@ -170,7 +170,7 @@ export const TermsSectionContent: React.FC = () => {
                   Read and write file system privileges are restricted purely to explicit user commands: importing source vocal stems or video tracks for audio replacement, and saving finalized rendered master files directly back to your device storage.
                 </p>
                 <div className="pt-1">
-                  <span className="text-[11px] text-[#f46117] bg-[#ffdbce] px-2.5 py-1 rounded font-semibold">
+                  <span className="text-[11px] text-[#2084ff] bg-[#e6f0ff] px-2.5 py-1 rounded font-semibold">
                     Zero passive indexing or unrelated photo scanning
                   </span>
                 </div>
@@ -184,7 +184,7 @@ export const TermsSectionContent: React.FC = () => {
 
           {/* Section 4: Acceptable Use */}
           <section id="acceptable-use" className="scroll-mt-32 flex flex-col gap-4">
-            <span className="text-xs font-semibold text-[#f46117] tracking-wider uppercase">
+            <span className="text-xs font-semibold text-[#2084ff] tracking-wider uppercase">
               04 / Ethical Synthesis
             </span>
             <h2 className="text-2xl font-bold text-[#111827] tracking-tight">
@@ -211,7 +211,7 @@ export const TermsSectionContent: React.FC = () => {
 
           {/* Section 5: IP Ownership */}
           <section id="ip-ownership" className="scroll-mt-32 flex flex-col gap-4">
-            <span className="text-xs font-semibold text-[#f46117] tracking-wider uppercase">
+            <span className="text-xs font-semibold text-[#2084ff] tracking-wider uppercase">
               05 / Property Architecture
             </span>
             <h2 className="text-2xl font-bold text-[#111827] tracking-tight">
@@ -232,7 +232,7 @@ export const TermsSectionContent: React.FC = () => {
 
           {/* Section 6: Liability & Governing Law */}
           <section id="liability-governing" className="scroll-mt-32 flex flex-col gap-4">
-            <span className="text-xs font-semibold text-[#f46117] tracking-wider uppercase">
+            <span className="text-xs font-semibold text-[#2084ff] tracking-wider uppercase">
               06 / Legal Disclaimers
             </span>
             <h2 className="text-2xl font-bold text-[#111827] tracking-tight">

@@ -61,11 +61,11 @@ export const ContactFormSection: React.FC = () => {
     <section className="relative w-full py-20 md:py-28 px-5 md:px-12 flex flex-col items-center bg-[#fafafa]">
       {/* Top Acoustic Motif Visualizer */}
       <div aria-hidden="true" className="flex items-center gap-1.5 mb-6 opacity-80">
-        <span className="w-0.5 h-3 bg-[#e2bfb2] rounded-full" />
-        <span className="w-0.5 h-5 bg-[#e2bfb2] rounded-full" />
-        <span className="w-0.5 h-7 bg-[#f46117] rounded-full animate-pulse" />
-        <span className="w-0.5 h-4 bg-[#e2bfb2] rounded-full" />
-        <span className="w-0.5 h-2 bg-[#e2bfb2] rounded-full" />
+        <span className="w-0.5 h-3 bg-[#90c2ff] rounded-full" />
+        <span className="w-0.5 h-5 bg-[#90c2ff] rounded-full" />
+        <span className="w-0.5 h-7 bg-[#2084ff] rounded-full animate-pulse" />
+        <span className="w-0.5 h-4 bg-[#90c2ff] rounded-full" />
+        <span className="w-0.5 h-2 bg-[#90c2ff] rounded-full" />
       </div>
 
       {/* Editorial Header Block */}
@@ -94,7 +94,7 @@ export const ContactFormSection: React.FC = () => {
               value={formData.name}
               onChange={handleChange}
               placeholder="e.g. Sarah Jenkins"
-              className="w-full bg-[#f3f4f6] text-[#111827] text-sm rounded-lg px-4 py-3 border border-[#e5e7eb] focus:bg-white focus:border-[#f46117] focus:outline-none transition-all duration-200 placeholder:text-[#9ca3af]"
+              className="w-full bg-[#f3f4f6] text-[#111827] text-sm rounded-lg px-4 py-3 border border-[#e5e7eb] focus:bg-white focus:border-[#2084ff] focus:outline-none transition-all duration-200 placeholder:text-[#9ca3af]"
             />
           </FormField>
 
@@ -108,7 +108,7 @@ export const ContactFormSection: React.FC = () => {
               value={formData.email}
               onChange={handleChange}
               placeholder="sarah@example.com"
-              className="w-full bg-[#f3f4f6] text-[#111827] text-sm rounded-lg px-4 py-3 border border-[#e5e7eb] focus:bg-white focus:border-[#f46117] focus:outline-none transition-all duration-200 placeholder:text-[#9ca3af]"
+              className="w-full bg-[#f3f4f6] text-[#111827] text-sm rounded-lg px-4 py-3 border border-[#e5e7eb] focus:bg-white focus:border-[#2084ff] focus:outline-none transition-all duration-200 placeholder:text-[#9ca3af]"
             />
           </FormField>
 
@@ -120,7 +120,7 @@ export const ContactFormSection: React.FC = () => {
                 name="subject"
                 value={formData.subject}
                 onChange={handleChange}
-                className="w-full appearance-none bg-[#f3f4f6] text-[#111827] text-sm rounded-lg px-4 py-3 pr-10 border border-[#e5e7eb] focus:bg-white focus:border-[#f46117] focus:outline-none transition-all duration-200 cursor-pointer"
+                className="w-full appearance-none bg-[#f3f4f6] text-[#111827] text-sm rounded-lg px-4 py-3 pr-10 border border-[#e5e7eb] focus:bg-white focus:border-[#2084ff] focus:outline-none transition-all duration-200 cursor-pointer"
               >
                 <option value="general">General Inquiry</option>
                 <option value="enterprise">Enterprise & Licensing</option>
@@ -148,7 +148,7 @@ export const ContactFormSection: React.FC = () => {
               value={formData.message}
               onChange={handleChange}
               placeholder="How can our acoustics team assist your workflow today?"
-              className="w-full bg-[#f3f4f6] text-[#111827] text-sm rounded-lg p-4 border border-[#e5e7eb] focus:bg-white focus:border-[#f46117] focus:outline-none transition-all duration-200 placeholder:text-[#9ca3af] resize-none"
+              className="w-full bg-[#f3f4f6] text-[#111827] text-sm rounded-lg p-4 border border-[#e5e7eb] focus:bg-white focus:border-[#2084ff] focus:outline-none transition-all duration-200 placeholder:text-[#9ca3af] resize-none"
             />
           </FormField>
 

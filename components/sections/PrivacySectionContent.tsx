@@ -56,7 +56,7 @@ export const PrivacySectionContent: React.FC = () => {
       <div className="max-w-4xl mx-auto px-5 md:px-6 py-12 flex flex-col gap-12">
         {/* Highlighted Voice Pledge Banner */}
         <div className="bg-white rounded-xl p-6 border border-[#e5e7eb] shadow-sm flex items-start gap-4">
-          <div className="p-2.5 rounded-lg bg-[#ffdbce] text-[#f46117] flex items-center justify-center shrink-0">
+          <div className="p-2.5 rounded-lg bg-[#e6f0ff] text-[#2084ff] flex items-center justify-center shrink-0">
             <ShieldCheck className="w-6 h-6" />
           </div>
           <div className="flex flex-col gap-1">
@@ -144,7 +144,7 @@ export const PrivacySectionContent: React.FC = () => {
               </div>
 
               <div className="bg-[#f3f4f6] rounded-lg p-4 flex items-center gap-3 border border-[#e5e7eb]">
-                <Info className="w-5 h-5 text-[#f46117] shrink-0" />
+                <Info className="w-5 h-5 text-[#2084ff] shrink-0" />
                 <p className="text-xs text-[#4b5563] font-medium">
                   Fish Labs never introduces your custom vocal weights or raw acoustic clips into public-facing generative checkpoints or open foundation models.
                 </p>
@@ -273,7 +273,7 @@ export const PrivacySectionContent: React.FC = () => {
                   <Mail className="w-4 h-4 text-[#575e70]" />
                   <a
                     href="mailto:privacy@fishlabs.ai"
-                    className="font-semibold text-[#f46117] hover:underline"
+                    className="font-semibold text-[#2084ff] hover:underline"
                   >
                     privacy@fishlabs.ai
                   </a>
@@ -290,7 +290,7 @@ export const PrivacySectionContent: React.FC = () => {
                 <Button
                   variant="secondary"
                   size="md"
-                  href="/#delete-account"
+                  href="/delete-account"
                 >
                   Delete Account
                 </Button>

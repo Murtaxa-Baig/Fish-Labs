@@ -20,7 +20,7 @@ export const FeatureCard: React.FC<FeatureCardProps> = ({
   return (
     <div className="bg-white p-6 rounded-xl border border-[#e5e7eb] shadow-sm flex flex-col justify-between gap-6 hover:shadow-md hover:border-[#d1d5db] transition-all duration-300 group">
       <div className="flex flex-col gap-4">
-        <div className="w-12 h-12 rounded-xl bg-[#f3f4f6] flex items-center justify-center text-[#f46117] group-hover:bg-[#ffdbce] transition-colors duration-300">
+        <div className="w-12 h-12 rounded-xl bg-[#f3f4f6] flex items-center justify-center text-[#2084ff] group-hover:bg-[#e6f0ff] transition-colors duration-300">
           {icon}
         </div>
         <div className="flex flex-col gap-1.5">
@@ -39,7 +39,7 @@ export const FeatureCard: React.FC<FeatureCardProps> = ({
       </div>
       <div className="bg-[#f8f9fa] rounded-lg p-2.5 flex items-center justify-between text-xs text-[#575e70] border border-[#f3f4f6]">
         <span>{tagText}</span>
-        <span className="text-[#f46117] shrink-0">{tagIcon}</span>
+        <span className="text-[#2084ff] shrink-0">{tagIcon}</span>
       </div>
     </div>
   );

@@ -50,7 +50,7 @@ export const DeleteAccountSection: React.FC = () => {
               Account Operations
             </span>
             <span className="text-[#575e70] opacity-40">/</span>
-            <span className="font-semibold text-[#f46117]">Data Erasure</span>
+            <span className="font-semibold text-[#2084ff]">Data Erasure</span>
           </div>
           <Badge variant="status" showDot>
             Acoustic Profile Vault
@@ -69,7 +69,7 @@ export const DeleteAccountSection: React.FC = () => {
 
         {/* Warning / Irreversible Action Notice Panel */}
         <div className="rounded-xl bg-white border border-[#e5e7eb] shadow-sm p-6 flex flex-col md:flex-row items-start gap-4">
-          <div className="w-10 h-10 rounded-lg bg-[#ffdbce] text-[#f46117] flex items-center justify-center shrink-0">
+          <div className="w-10 h-10 rounded-lg bg-[#e6f0ff] text-[#2084ff] flex items-center justify-center shrink-0">
             <HeartHandshake className="w-5 h-5" />
           </div>
           <div className="flex flex-col gap-1.5">
@@ -77,7 +77,7 @@ export const DeleteAccountSection: React.FC = () => {
               <span className="text-base font-bold text-[#111827]">
                 Irreversible Action Notice
               </span>
-              <span className="text-[11px] font-semibold px-2 py-0.5 rounded bg-[#ffdbce] text-[#f46117]">
+              <span className="text-[11px] font-semibold px-2 py-0.5 rounded bg-[#e6f0ff] text-[#2084ff]">
                 14-Day Purge
               </span>
             </div>
@@ -129,7 +129,7 @@ export const DeleteAccountSection: React.FC = () => {
         <div className="bg-white rounded-xl border border-[#e5e7eb] shadow-sm p-6 md:p-8">
           {isSubmitted ? (
             <div className="py-8 flex flex-col items-center text-center gap-4 animate-in fade-in duration-300">
-              <div className="w-12 h-12 rounded-full bg-[#ffdbce] text-[#f46117] flex items-center justify-center">
+              <div className="w-12 h-12 rounded-full bg-[#e6f0ff] text-[#2084ff] flex items-center justify-center">
                 <MailCheck className="w-7 h-7" />
               </div>
               <div className="flex flex-col gap-1.5 items-center">
@@ -162,7 +162,7 @@ export const DeleteAccountSection: React.FC = () => {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="studio.engineer@domain.com"
-                    className="w-full pl-10 pr-4 py-3 bg-[#f3f4f6] rounded-lg text-sm text-[#111827] placeholder:text-[#9ca3af] focus:bg-white focus:border-[#f46117] focus:outline-none border border-[#e5e7eb] transition-all"
+                    className="w-full pl-10 pr-4 py-3 bg-[#f3f4f6] rounded-lg text-sm text-[#111827] placeholder:text-[#9ca3af] focus:bg-white focus:border-[#2084ff] focus:outline-none border border-[#e5e7eb] transition-all"
                   />
                 </div>
               </FormField>
@@ -178,7 +178,7 @@ export const DeleteAccountSection: React.FC = () => {
                     id="deletion-reason"
                     value={reason}
                     onChange={(e) => setReason(e.target.value)}
-                    className="w-full appearance-none bg-[#f3f4f6] text-[#111827] text-sm rounded-lg px-4 py-3 pr-10 border border-[#e5e7eb] focus:bg-white focus:border-[#f46117] focus:outline-none transition-all cursor-pointer"
+                    className="w-full appearance-none bg-[#f3f4f6] text-[#111827] text-sm rounded-lg px-4 py-3 pr-10 border border-[#e5e7eb] focus:bg-white focus:border-[#2084ff] focus:outline-none transition-all cursor-pointer"
                   >
                     <option value="" disabled>
                       Select a primary operational reason
@@ -213,7 +213,7 @@ export const DeleteAccountSection: React.FC = () => {
                     type="checkbox"
                     checked={isConfirmed}
                     onChange={(e) => setIsConfirmed(e.target.checked)}
-                    className="mt-1 h-4 w-4 rounded accent-[#f46117] cursor-pointer"
+                    className="mt-1 h-4 w-4 rounded accent-[#2084ff] cursor-pointer"
                   />
                   <span className="text-xs text-[#575e70] group-hover:text-[#111827] transition-colors leading-relaxed">
                     I acknowledge that this action is irreversible. All acoustic models, neural voiceprints, and audio assets tied to this identity will be permanently eradicated without recourse.

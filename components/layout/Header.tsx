@@ -56,7 +56,7 @@ export const Header: React.FC = () => {
                 href={link.href}
                 className={`text-sm font-medium transition-colors ${
                   isActive
-                    ? "text-[#111827] font-semibold border-b-2 border-[#f46117] pb-0.5"
+                    ? "text-[#111827] font-semibold border-b-2 border-[#2084ff] pb-0.5"
                     : "text-[#4b5563] hover:text-[#111827]"
                 }`}
               >
@@ -77,7 +77,7 @@ export const Header: React.FC = () => {
             Download App
           </Button>
 
-          <div className="w-8 h-8 rounded-full bg-[#f46117] text-white flex items-center justify-center shadow-xs">
+          <div className="w-8 h-8 rounded-full bg-[#2084ff] text-white flex items-center justify-center shadow-xs">
             <User className="w-4 h-4" />
           </div>
 
@@ -113,7 +113,7 @@ export const Header: React.FC = () => {
                 href={link.href}
                 onClick={() => setMobileMenuOpen(false)}
                 className={`text-sm font-medium py-2 transition-colors ${
-                  isActive ? "text-[#f46117] font-semibold" : "text-[#111827] hover:text-[#f46117]"
+                  isActive ? "text-[#2084ff] font-semibold" : "text-[#111827] hover:text-[#2084ff]"
                 }`}
               >
                 {link.label}

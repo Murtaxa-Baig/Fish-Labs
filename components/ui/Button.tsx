@@ -22,11 +22,11 @@ export const Button: React.FC<ButtonProps> = ({
   ...props
 }) => {
   const baseStyles =
-    "inline-flex items-center justify-center font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[#f46117] focus:ring-offset-1 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer";
+    "inline-flex items-center justify-center font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[#2084ff] focus:ring-offset-1 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer";
 
   const variants = {
     primary:
-      "bg-[#f46117] text-white hover:bg-[#dc5511] active:bg-[#cb4a00] shadow-sm",
+      "bg-[#2084ff] text-white hover:bg-[#1a6fe0] active:bg-[#155cc4] shadow-sm",
     secondary:
       "bg-white text-[#111827] border border-[#e5e7eb] hover:bg-[#f9fafb] hover:border-[#d1d5db] shadow-sm",
     dark: "bg-[#111827] text-white hover:bg-[#1f2937] active:bg-[#000000] shadow-sm",

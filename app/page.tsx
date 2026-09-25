@@ -128,7 +128,7 @@ export default function Home() {
             {/* Section Header */}
             <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
               <div className="flex flex-col gap-2 max-w-[65ch]">
-                <span className="text-xs font-semibold text-[#f46117] uppercase tracking-wider">
+                <span className="text-xs font-semibold text-[#2084ff] uppercase tracking-wider">
                   Modular Vocal Stack
                 </span>
                 <h2 className="text-3xl md:text-4xl font-bold text-[#111827] tracking-tight">
@@ -139,7 +139,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex items-center gap-2 text-[#575e70] text-xs font-medium bg-white px-3 py-1.5 rounded-full border border-[#e5e7eb] shadow-xs">
-                <CheckCircle2 className="w-4 h-4 text-[#f46117]" />
+                <CheckCircle2 className="w-4 h-4 text-[#2084ff]" />
                 <span>Studio Calibration 2025</span>
               </div>
             </div>
@@ -190,7 +190,7 @@ export default function Home() {
           <div className="max-w-[1200px] mx-auto px-5 md:px-12 flex flex-col items-center text-center gap-12">
             {/* Header */}
             <div className="flex flex-col items-center gap-2 max-w-[60ch]">
-              <span className="text-xs font-semibold text-[#f46117] uppercase tracking-wider">
+              <span className="text-xs font-semibold text-[#2084ff] uppercase tracking-wider">
                 Mobile Deployment
               </span>
               <h2 className="text-3xl md:text-4xl font-bold text-[#111827] tracking-tight">
