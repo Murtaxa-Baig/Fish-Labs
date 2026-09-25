@@ -14,7 +14,7 @@ export default function ContactPage() {
   return (
     <div className="w-full min-h-screen flex flex-col bg-[#fafafa] text-[#111827]">
       <Header />
-      <main className="w-full pt-16 flex-1">
+      <main className="w-full flex-1">
         <ContactFormSection />
       </main>
       <Footer />

@@ -1,135 +1,138 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Button } from "../ui/Button";
-import { Menu, X, User } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 export const Header: React.FC = () => {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 10);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const navLinks = [
     { label: "Home", href: "/" },
     { label: "Contact", href: "/contact" },
-    { label: "Terms & Conditions", href: "/terms-and-conditions" },
-    { label: "Privacy Policy", href: "/privacy-policy" },
+    { label: "Terms", href: "/terms-and-conditions" },
+    { label: "Privacy", href: "/privacy-policy" },
   ];
 
+  const isActive = (path: string) => {
+    if (path === "/") return pathname === "/";
+    return pathname.startsWith(path);
+  };
+
+  const linkClass = (path: string) =>
+    `text-sm font-medium transition-colors ${
+      isActive(path)
+        ? "text-[#2084ff] font-semibold"
+        : "text-[#4b5563] hover:text-[#2084ff]"
+    }`;
+
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-[#e5e7eb] transition-all">
-      <div className="h-16 max-w-[1200px] mx-auto px-5 md:px-12 flex items-center justify-between">
-        {/* Brand Logo */}
-        <Link href="/" className="flex items-center gap-2.5 group">
-          <Image
-            src="/images/logo-icon.svg"
-            alt="Fish Labs Logo"
-            width={32}
-            height={32}
-            className="h-8 w-auto object-contain transition-transform duration-200 group-hover:scale-105"
-            priority
-          />
-          <span className="text-lg font-bold tracking-tight text-[#111827]">
-            Fish Labs
-          </span>
-        </Link>
+    <header
+      className={`sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-[#e5e7eb] transition-all duration-300 ${
+        scrolled ? "shadow-md" : ""
+      }`}
+    >
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-16">
+          {/* Logo & Brand Name */}
+          <div className="flex items-center gap-2.5 min-w-0">
+            <Link href="/" className="flex items-center gap-2.5 group">
+              <Image
+                src="/images/logo-icon.svg"
+                alt="Fish Labs Logo"
+                width={36}
+                height={36}
+                className="h-9 w-auto object-contain transition-transform duration-200 group-hover:scale-105"
+                priority
+              />
+              <span className="text-xl font-bold tracking-tight text-[#111827]">
+                Fish Labs
+              </span>
+            </Link>
+          </div>
 
-        {/* Desktop Navigation Links */}
-        <nav className="hidden md:flex items-center gap-8">
-          {navLinks.map((link) => {
-            const isActive =
-              link.href === "/"
-                ? pathname === "/"
-                : link.href === "/contact"
-                ? pathname === "/contact"
-                : link.href === "/terms-and-conditions"
-                ? pathname === "/terms-and-conditions"
-                : link.href === "/privacy-policy"
-                ? pathname === "/privacy-policy"
-                : false;
-
-            return (
+          {/* Desktop Links & Download Button */}
+          <div className="hidden md:flex items-center gap-8">
+            {navLinks.map((link) => (
               <Link
                 key={link.label}
                 href={link.href}
-                className={`text-sm font-medium transition-colors ${
-                  isActive
-                    ? "text-[#111827] font-semibold border-b-2 border-[#2084ff] pb-0.5"
-                    : "text-[#4b5563] hover:text-[#111827]"
-                }`}
+                className={linkClass(link.href)}
               >
                 {link.label}
               </Link>
-            );
-          })}
-        </nav>
+            ))}
 
-        {/* Action Controls */}
-        <div className="flex items-center gap-3">
-          <Button
-            variant="primary"
-            size="sm"
-            href="/#download"
-            className="hidden sm:inline-flex"
-          >
-            Download App
-          </Button>
-
-          <div className="w-8 h-8 rounded-full bg-[#2084ff] text-white flex items-center justify-center shadow-xs">
-            <User className="w-4 h-4" />
+            <Link
+              href="/#download"
+              onClick={(e) => {
+                if (pathname === "/") {
+                  e.preventDefault();
+                  document
+                    .getElementById("download")
+                    ?.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
+              className="text-sm font-bold px-6 py-2 rounded-lg transition-all bg-[#2084ff] text-white hover:bg-[#1a6fe0] active:bg-[#155cc4] shadow-md hover:shadow-lg"
+            >
+              Download
+            </Link>
           </div>
 
-          {/* Mobile Menu Button */}
+          {/* Mobile Hamburger Button */}
           <button
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="p-1.5 rounded-lg text-[#4b5563] hover:text-[#111827] hover:bg-[#f3f4f6] md:hidden cursor-pointer"
-            aria-label="Toggle Navigation Menu"
+            className="md:hidden text-[#4b5563] hover:text-[#111827] p-1.5 rounded-lg cursor-pointer"
+            onClick={() => setIsOpen(!isOpen)}
+            aria-label="Toggle menu"
           >
-            {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
       </div>
 
       {/* Mobile Drawer Menu */}
-      {mobileMenuOpen && (
-        <div className="md:hidden border-b border-[#e5e7eb] bg-white px-5 py-4 flex flex-col gap-3 shadow-lg animate-in slide-in-from-top duration-200">
-          {navLinks.map((link) => {
-            const isActive =
-              link.href === "/"
-                ? pathname === "/"
-                : link.href === "/contact"
-                ? pathname === "/contact"
-                : link.href === "/terms-and-conditions"
-                ? pathname === "/terms-and-conditions"
-                : link.href === "/privacy-policy"
-                ? pathname === "/privacy-policy"
-                : false;
-
-            return (
+      {isOpen && (
+        <div className="md:hidden bg-white border-t border-[#e5e7eb] animate-in slide-in-from-top duration-200">
+          <div className="flex flex-col gap-4 px-6 py-6">
+            {navLinks.map((link) => (
               <Link
                 key={link.label}
                 href={link.href}
-                onClick={() => setMobileMenuOpen(false)}
-                className={`text-sm font-medium py-2 transition-colors ${
-                  isActive ? "text-[#2084ff] font-semibold" : "text-[#111827] hover:text-[#2084ff]"
-                }`}
+                onClick={() => setIsOpen(false)}
+                className={linkClass(link.href)}
               >
                 {link.label}
               </Link>
-            );
-          })}
-          <div className="pt-2 border-t border-[#f3f4f6]">
-            <Button
-              variant="primary"
-              size="md"
+            ))}
+
+            <Link
               href="/#download"
-              className="w-full"
-              onClick={() => setMobileMenuOpen(false)}
+              onClick={(e) => {
+                if (pathname === "/") {
+                  e.preventDefault();
+                  document
+                    .getElementById("download")
+                    ?.scrollIntoView({ behavior: "smooth" });
+                }
+                setIsOpen(false);
+              }}
+              className="mt-2 text-sm font-bold text-center px-6 py-2.5 rounded-lg transition-all bg-[#2084ff] text-white hover:bg-[#1a6fe0] shadow-md"
             >
-              Download App
-            </Button>
+              Download
+            </Link>
           </div>
         </div>
       )}

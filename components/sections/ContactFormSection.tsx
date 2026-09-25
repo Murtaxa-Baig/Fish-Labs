@@ -27,7 +27,9 @@ export const ContactFormSection: React.FC = () => {
   const [feedbackMsg, setFeedbackMsg] = useState("");
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
+    >,
   ) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -41,7 +43,7 @@ export const ContactFormSection: React.FC = () => {
     setTimeout(() => {
       setStatus("sent");
       setFeedbackMsg(
-        "Thank you. Your dispatch has been queued for immediate acoustic review by Fish Labs."
+        "Thank you. Your dispatch has been queued for immediate acoustic review by Fish Labs.",
       );
 
       setTimeout(() => {
@@ -58,26 +60,17 @@ export const ContactFormSection: React.FC = () => {
   };
 
   return (
-    <section className="relative w-full py-20 md:py-28 px-5 md:px-12 flex flex-col items-center bg-[#fafafa]">
-      {/* Top Acoustic Motif Visualizer */}
-      <div aria-hidden="true" className="flex items-center gap-1.5 mb-6 opacity-80">
-        <span className="w-0.5 h-3 bg-[#90c2ff] rounded-full" />
-        <span className="w-0.5 h-5 bg-[#90c2ff] rounded-full" />
-        <span className="w-0.5 h-7 bg-[#2084ff] rounded-full animate-pulse" />
-        <span className="w-0.5 h-4 bg-[#90c2ff] rounded-full" />
-        <span className="w-0.5 h-2 bg-[#90c2ff] rounded-full" />
-      </div>
+    <section className="relative w-full py-6 md:py-12 px-5 md:px-12 flex flex-col items-center bg-[#fafafa]">
 
       {/* Editorial Header Block */}
       <div className="max-w-[65ch] text-center mb-12 flex flex-col items-center gap-3">
-        <Badge variant="status" showDot pulseDot>
-          Get in Touch
-        </Badge>
         <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-[#111827]">
           We're here to help
         </h1>
         <p className="text-base md:text-lg text-[#4b5563] leading-relaxed">
-          Have questions about Fish Labs, enterprise licenses, or technical acoustic support? Send us a message and our engineering team will get back to you within 24 hours.
+          Have questions about Fish Labs, enterprise licenses, or technical
+          acoustic support? Send us a message and our engineering team will get
+          back to you within 24 hours.
         </p>
       </div>
 
@@ -99,7 +92,11 @@ export const ContactFormSection: React.FC = () => {
           </FormField>
 
           {/* Email Address */}
-          <FormField id="email-address" label="Email Address" rightLabel="Required">
+          <FormField
+            id="email-address"
+            label="Email Address"
+            rightLabel="Required"
+          >
             <input
               id="email-address"
               name="email"
@@ -173,8 +170,8 @@ export const ContactFormSection: React.FC = () => {
               {status === "sending"
                 ? "Sending..."
                 : status === "sent"
-                ? "Dispatched"
-                : "Send Message"}
+                  ? "Dispatched"
+                  : "Send Message"}
             </Button>
 
             {feedbackMsg && (
@@ -186,32 +183,7 @@ export const ContactFormSection: React.FC = () => {
         </form>
       </div>
 
-      {/* Support Info Cards Grid */}
-      <div className="w-full max-w-[640px] mt-12 grid grid-cols-1 sm:grid-cols-3 gap-4">
-        <ContactInfoCard
-          icon={<Mail className="w-4 h-4" />}
-          title="Direct Dispatch"
-          value="support@fishlabs.ai"
-          href="mailto:support@fishlabs.ai"
-        />
-        <ContactInfoCard
-          icon={<Clock className="w-4 h-4" />}
-          title="Response SLA"
-          value="Under 24 Hours"
-        />
-        <ContactInfoCard
-          icon={<MapPin className="w-4 h-4" />}
-          title="Acoustics Studio"
-          value="San Francisco, CA"
-        />
-      </div>
 
-      {/* Hardware Node Aesthetic Note */}
-      <div className="mt-16 flex items-center gap-3 opacity-60 text-[11px] font-mono tracking-widest text-[#575e70] uppercase">
-        <span>NODE // ENCRYPTED INGESTION v4.2</span>
-        <span className="w-1.5 h-1.5 rounded-full bg-[#575e70]" />
-        <span>99.98% UPTIME</span>
-      </div>
     </section>
   );
 };
