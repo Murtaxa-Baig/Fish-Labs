@@ -19,10 +19,12 @@ import {
   Mic,
   Split,
   Music,
-  Sparkles,
+  FolderPlus,
+  TrendingUp,
   Sliders,
   Piano,
-  Award,
+  Folder,
+  Flame,
   Smartphone,
   CheckCircle2,
 } from "lucide-react";
@@ -135,7 +137,7 @@ export default function Home() {
                   Precision Audio Engineering
                 </h2>
                 <p className="text-base text-[#4b5563]">
-                  Four powerful tools designed to elevate your vocal production.
+                  Five powerful tools designed to elevate your vocal production.
                 </p>
               </div>
               <div className="flex items-center gap-2 text-[#575e70] text-xs font-medium bg-white px-3 py-1.5 rounded-full border border-[#e5e7eb] shadow-xs">
@@ -145,7 +147,7 @@ export default function Home() {
             </div>
 
             {/* Feature Cards Matrix Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <FeatureCard
                 icon={<Mic className="w-6 h-6" />}
                 stepNumber="01"
@@ -171,12 +173,20 @@ export default function Home() {
                 tagIcon={<Piano className="w-4 h-4" />}
               />
               <FeatureCard
-                icon={<Sparkles className="w-6 h-6" />}
+                icon={<FolderPlus className="w-6 h-6" />}
                 stepNumber="04"
-                title="Celebrity Voices"
-                description="Access a curated library of licensed iconic vocal presets with authentic tonality and inflection."
-                tagText="Verified Rights"
-                tagIcon={<Award className="w-4 h-4" />}
+                title="Voice Library"
+                description="Create custom folders, organize audio files, and securely store your generated voice profiles in one central library."
+                tagText="Folder & Asset Vault"
+                tagIcon={<Folder className="w-4 h-4" />}
+              />
+              <FeatureCard
+                icon={<TrendingUp className="w-6 h-6" />}
+                stepNumber="05"
+                title="Trending Voices"
+                description="Explore popular community voice models, top-rated acoustic profiles, and viral soundscapes updated daily."
+                tagText="Curated Voice Feed"
+                tagIcon={<Flame className="w-4 h-4" />}
               />
             </div>
           </div>
