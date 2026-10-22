@@ -9,11 +9,11 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Fish Labs — Professional AI Voice Studio & Acoustic Architecture",
+  title: "Music Lab — Professional AI Voice Studio & Acoustic Architecture",
   description:
-    "Transform your audio workflow with studio-grade voice cloning, instant vocal stem separation, and generative voice synthesis—engineered by Fish Labs.",
+    "Transform your audio workflow with studio-grade voice cloning, instant vocal stem separation, and generative voice synthesis—engineered by Music Lab.",
   keywords: [
-    "Fish Labs",
+    "Music Lab",
     "AI Voice Studio",
     "Voice Cloning",
     "Stem Separation",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     "Acoustic Architecture",
   ],
   icons: {
-    icon: "/images/logo-icon.svg",
+    icon: "/favicon.ico",
   },
 };
 

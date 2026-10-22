@@ -5,9 +5,9 @@ import { TermsSectionContent } from "../../components/sections/TermsSectionConte
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Terms & Conditions — Fish Labs",
+  title: "Terms & Conditions — Music Lab",
   description:
-    "Review the terms of service, subscription billing policies, device permissions, and voice synthesis rights for Fish Labs.",
+    "Review the terms of service, subscription billing policies, device permissions, and voice synthesis rights for Music Lab.",
 };
 
 export default function TermsPage() {

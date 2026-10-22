@@ -5,9 +5,9 @@ import { ContactFormSection } from "../../components/sections/ContactFormSection
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Us — Fish Labs",
+  title: "Contact Us — Music Lab",
   description:
-    "Get in touch with the Fish Labs engineering team for general inquiries, enterprise licensing, or technical acoustic support.",
+    "Get in touch with the Music Lab engineering team for general inquiries, enterprise licensing, or technical acoustic support.",
 };
 
 export default function ContactPage() {

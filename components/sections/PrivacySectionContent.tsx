@@ -47,7 +47,8 @@ export const PrivacySectionContent: React.FC = () => {
             Privacy Policy
           </h1>
           <p className="text-sm text-[#575e70] font-medium">
-            Effective Date: January 15, 2025 • Transparent, ethical AI voice handling
+            Effective Date: January 15, 2025 • Transparent, ethical AI voice
+            handling
           </p>
         </div>
       </section>
@@ -60,9 +61,13 @@ export const PrivacySectionContent: React.FC = () => {
             <ShieldCheck className="w-6 h-6" />
           </div>
           <div className="flex flex-col gap-1">
-            <span className="text-sm font-bold text-[#111827]">Our Voice Pledge</span>
+            <span className="text-sm font-bold text-[#111827]">
+              Our Voice Pledge
+            </span>
             <p className="text-sm text-[#4b5563] leading-relaxed">
-              At Fish Labs, your voice data belongs to you. We do not sell your personal recordings or use private voice samples to train global foundational models without explicit opt-in.
+              At Music Lab, your voice data belongs to you. We do not sell your
+              personal recordings or use private voice samples to train global
+              foundational models without explicit opt-in.
             </p>
           </div>
         </div>
@@ -83,7 +88,9 @@ export const PrivacySectionContent: React.FC = () => {
               </h2>
             </div>
             <p className="text-sm text-[#4b5563] leading-relaxed">
-              We collect and process minimal distinct telemetry and acoustic input points solely required to deliver high-fidelity voice synthesis, stems processing, and account maintenance:
+              We collect and process minimal distinct telemetry and acoustic
+              input points solely required to deliver high-fidelity voice
+              synthesis, stems processing, and account maintenance:
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <DataCategoryCard
@@ -124,7 +131,10 @@ export const PrivacySectionContent: React.FC = () => {
                     Isolated Processing Pipeline
                   </h4>
                   <p className="text-sm text-[#4b5563] leading-relaxed">
-                    Voice synthesis calculations take place strictly inside ephemeral sandboxed computing workers. Once synthesis finishes, temporary working caches are automatically purged within 15 minutes.
+                    Voice synthesis calculations take place strictly inside
+                    ephemeral sandboxed computing workers. Once synthesis
+                    finishes, temporary working caches are automatically purged
+                    within 15 minutes.
                   </p>
                 </div>
               </div>
@@ -138,7 +148,11 @@ export const PrivacySectionContent: React.FC = () => {
                     Retention &amp; Cryptographic Storage
                   </h4>
                   <p className="text-sm text-[#4b5563] leading-relaxed">
-                    Reference audio vectors and bespoke voice prints reside in isolated cloud blocks encrypted with military-grade AES-256 at rest and TLS 1.3 in transit. You retain explicit deletion controls over all raw audio stems and synthetic embeddings at any time.
+                    Reference audio vectors and bespoke voice prints reside in
+                    isolated cloud blocks encrypted with military-grade AES-256
+                    at rest and TLS 1.3 in transit. You retain explicit deletion
+                    controls over all raw audio stems and synthetic embeddings
+                    at any time.
                   </p>
                 </div>
               </div>
@@ -146,14 +160,19 @@ export const PrivacySectionContent: React.FC = () => {
               <div className="bg-[#f3f4f6] rounded-lg p-4 flex items-center gap-3 border border-[#e5e7eb]">
                 <Info className="w-5 h-5 text-[#2084ff] shrink-0" />
                 <p className="text-xs text-[#4b5563] font-medium">
-                  Fish Labs never introduces your custom vocal weights or raw acoustic clips into public-facing generative checkpoints or open foundation models.
+                  Music Lab never introduces your custom vocal weights or raw
+                  acoustic clips into public-facing generative checkpoints or
+                  open foundation models.
                 </p>
               </div>
             </div>
           </section>
 
           {/* Section 3: Device Permissions */}
-          <section id="permissions" className="flex flex-col gap-4 scroll-mt-24">
+          <section
+            id="permissions"
+            className="flex flex-col gap-4 scroll-mt-24"
+          >
             <div className="flex items-center gap-3">
               <span className="w-7 h-7 rounded-full bg-[#eeeeee] flex items-center justify-center text-xs font-bold text-[#111827]">
                 03
@@ -163,7 +182,8 @@ export const PrivacySectionContent: React.FC = () => {
               </h2>
             </div>
             <p className="text-sm text-[#4b5563] leading-relaxed">
-              The Fish Labs native studio client requests strictly bounded privileges to perform low-latency capture and file routing:
+              The Music Lab native studio client requests strictly bounded
+              privileges to perform low-latency capture and file routing:
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <DataCategoryCard
@@ -199,7 +219,10 @@ export const PrivacySectionContent: React.FC = () => {
             </div>
             <div className="bg-white rounded-xl p-6 border border-[#e5e7eb] shadow-sm flex flex-col gap-4">
               <p className="text-sm text-[#4b5563] leading-relaxed">
-                We operate on a zero-broker model. We do not sell, rent, or trade your personalized biometric voice embeddings, phone captures, or profile data to third-party ad networks, marketing brokers, or data aggregators.
+                We operate on a zero-broker model. We do not sell, rent, or
+                trade your personalized biometric voice embeddings, phone
+                captures, or profile data to third-party ad networks, marketing
+                brokers, or data aggregators.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-1">
                 <div className="p-4 rounded-lg bg-[#f8f9fa] border border-[#e5e7eb] flex flex-col gap-1">
@@ -207,7 +230,9 @@ export const PrivacySectionContent: React.FC = () => {
                     Infrastructure Vendors
                   </span>
                   <p className="text-xs text-[#575e70] leading-relaxed">
-                    Strict SOC2-compliant bare-metal servers and cloud storage providers bound by strict contractual data-processing addendums.
+                    Strict SOC2-compliant bare-metal servers and cloud storage
+                    providers bound by strict contractual data-processing
+                    addendums.
                   </p>
                 </div>
                 <div className="p-4 rounded-lg bg-[#f8f9fa] border border-[#e5e7eb] flex flex-col gap-1">
@@ -215,7 +240,9 @@ export const PrivacySectionContent: React.FC = () => {
                     Payment Gateways
                   </span>
                   <p className="text-xs text-[#575e70] leading-relaxed">
-                    PCI-DSS certified processors (e.g. Stripe, Apple Pay). Sensitive financial numbers never transit or land on Fish Labs servers.
+                    PCI-DSS certified processors (e.g. Stripe, Apple Pay).
+                    Sensitive financial numbers never transit or land on Music
+                    Lab servers.
                   </p>
                 </div>
               </div>
@@ -233,7 +260,8 @@ export const PrivacySectionContent: React.FC = () => {
               </h2>
             </div>
             <p className="text-sm text-[#4b5563] leading-relaxed">
-              Regardless of physical domicile, we extend universal data ownership rights across all user accounts:
+              Regardless of physical domicile, we extend universal data
+              ownership rights across all user accounts:
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <DataCategoryCard
@@ -267,7 +295,9 @@ export const PrivacySectionContent: React.FC = () => {
                   Enterprise Protection Architecture
                 </span>
                 <p className="text-xs md:text-sm text-[#4b5563] leading-relaxed">
-                  Fish Labs is aligned with European GDPR standards and adheres to SOC2 Type II audit mechanisms. For inquiries or DPO communications:
+                  Music Lab is aligned with European GDPR standards and adheres
+                  to SOC2 Type II audit mechanisms. For inquiries or DPO
+                  communications:
                 </p>
                 <div className="flex items-center gap-2 mt-1 text-xs">
                   <Mail className="w-4 h-4 text-[#575e70]" />
@@ -287,11 +317,7 @@ export const PrivacySectionContent: React.FC = () => {
                 >
                   Contact Privacy Officer
                 </Button>
-                <Button
-                  variant="secondary"
-                  size="md"
-                  href="/delete-account"
-                >
+                <Button variant="secondary" size="md" href="/delete-account">
                   Delete Account
                 </Button>
               </div>
@@ -303,11 +329,17 @@ export const PrivacySectionContent: React.FC = () => {
         <div className="flex flex-col sm:flex-row items-center justify-between gap-3 pt-6 border-t border-[#e5e7eb] text-xs text-[#575e70]">
           <span>Version 3.4.1 • Acoustic Precision Systems</span>
           <div className="flex items-center gap-3 font-medium">
-            <Link href="/terms-and-conditions" className="hover:text-[#111827] transition-colors">
+            <Link
+              href="/terms-and-conditions"
+              className="hover:text-[#111827] transition-colors"
+            >
               Terms of Service
             </Link>
             <span>•</span>
-            <Link href="/contact" className="hover:text-[#111827] transition-colors">
+            <Link
+              href="/contact"
+              className="hover:text-[#111827] transition-colors"
+            >
               Support Desk
             </Link>
           </div>

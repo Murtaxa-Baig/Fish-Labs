@@ -5,9 +5,9 @@ import { PrivacySectionContent } from "../../components/sections/PrivacySectionC
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — Fish Labs",
+  title: "Privacy Policy — Music Lab",
   description:
-    "Read the Fish Labs privacy policy. Learn how we handle your voice data, ephemeral processing pipelines, device permissions, and universal user rights.",
+    "Read the Music Lab privacy policy. Learn how we handle your voice data, ephemeral processing pipelines, device permissions, and universal user rights.",
 };
 
 export default function PrivacyPage() {

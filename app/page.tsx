@@ -52,7 +52,10 @@ export default function Home() {
                 </h1>
 
                 <p className="text-base md:text-lg text-[#4b5563] max-w-[58ch] leading-relaxed">
-                  Transform your audio workflow with studio-grade voice cloning, instant vocal stem separation, and generative voice synthesis—engineered for creators, producers, and podcasters by Fish Labs.
+                  Transform your audio workflow with studio-grade voice cloning,
+                  instant vocal stem separation, and generative voice
+                  synthesis—engineered for creators, producers, and podcasters
+                  by Music Lab.
                 </p>
 
                 {/* Primary & Secondary CTAs */}
@@ -204,7 +207,7 @@ export default function Home() {
                 Mobile Deployment
               </span>
               <h2 className="text-3xl md:text-4xl font-bold text-[#111827] tracking-tight">
-                Download Fish Labs
+                Download Music Lab
               </h2>
               <p className="text-base text-[#4b5563]">
                 Available now on iOS and Android for mobile creators.

@@ -5,9 +5,9 @@ import DeleteConfirmForm from "../../../components/DeleteConfirmForm";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Confirm Account Deletion — Fish Labs",
+  title: "Confirm Account Deletion — Music Lab",
   description:
-    "Enter verification code or token to confirm Fish Labs account deletion.",
+    "Enter verification code or token to confirm Music Lab account deletion.",
 };
 
 export default function DeleteConfirmPage() {

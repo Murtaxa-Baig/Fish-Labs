@@ -5,9 +5,9 @@ import DeleteAccountForm from "../../components/DeleteAccountForm";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Delete Account — Fish Labs",
+  title: "Delete Account — Music Lab",
   description:
-    "Request account deletion and neural data removal for Fish Labs.",
+    "Request account deletion and neural data removal for Music Lab.",
 };
 
 export default function DeleteAccountPage() {

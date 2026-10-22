@@ -68,15 +68,12 @@ export default function DeleteAccountForm() {
         data.success !== false &&
         (data.success || !data.error)
       ) {
-        showToast(
-          data.message || "Verification email dispatched.",
-          "success"
-        );
+        showToast(data.message || "Verification email dispatched.", "success");
         setIsVerificationSent(true);
       } else {
         showToast(
           data.message || data.error || "Failed to initiate deletion request.",
-          "error"
+          "error",
         );
       }
     } catch (error) {
@@ -137,7 +134,9 @@ export default function DeleteAccountForm() {
                   Initiate Account Deletion
                 </h3>
                 <p className="text-gray-500 text-sm leading-relaxed">
-                  Are you sure you want to request account deletion? We will send a confirmation link and code to your registered email to verify your identity.
+                  Are you sure you want to request account deletion? We will
+                  send a confirmation link and code to your registered email to
+                  verify your identity.
                 </p>
               </div>
               <div className="flex border-t border-gray-100">
@@ -176,10 +175,11 @@ export default function DeleteAccountForm() {
                   Account Security
                 </div>
                 <h1 className="text-3xl font-extrabold text-gray-900 tracking-tight">
-                  Delete Fish Labs Account
+                  Delete Music Lab Account
                 </h1>
                 <p className="text-gray-500 text-sm max-w-md mx-auto">
-                  We are sorry to see you go. Please review the consequences below before requesting account deletion.
+                  We are sorry to see you go. Please review the consequences
+                  below before requesting account deletion.
                 </p>
               </div>
 
@@ -190,9 +190,18 @@ export default function DeleteAccountForm() {
                   <span>Important Deletion Notice:</span>
                 </div>
                 <ul className="text-xs text-red-900/80 space-y-1.5 list-disc pl-5 leading-relaxed">
-                  <li>Your voice models, cloned audio profiles, and project history will be permanently erased.</li>
-                  <li>Active subscriptions will be canceled at the end of your billing cycle.</li>
-                  <li>This action is irreversible after identity verification is completed.</li>
+                  <li>
+                    Your voice models, cloned audio profiles, and project
+                    history will be permanently erased.
+                  </li>
+                  <li>
+                    Active subscriptions will be canceled at the end of your
+                    billing cycle.
+                  </li>
+                  <li>
+                    This action is irreversible after identity verification is
+                    completed.
+                  </li>
                 </ul>
               </div>
 
@@ -272,7 +281,9 @@ export default function DeleteAccountForm() {
                         className="mt-1 w-4 h-4 rounded border-gray-300 text-red-600 focus:ring-red-500 cursor-pointer"
                       />
                       <span className="text-xs text-gray-600 leading-relaxed">
-                        I confirm that I want to delete my Fish Labs account and understand that all associated voice data will be permanently purged.
+                        I confirm that I want to delete my Music Lab account and
+                        understand that all associated voice data will be
+                        permanently purged.
                       </span>
                     </label>
                   </div>
@@ -301,7 +312,10 @@ export default function DeleteAccountForm() {
 
               <p className="text-center text-xs text-gray-500">
                 Having trouble?{" "}
-                <Link href="/contact" className="text-[#2084ff] hover:underline font-medium">
+                <Link
+                  href="/contact"
+                  className="text-[#2084ff] hover:underline font-medium"
+                >
                   Contact our support team
                 </Link>{" "}
                 for help.
@@ -339,13 +353,16 @@ export default function DeleteAccountForm() {
                 <div className="flex gap-3">
                   <Link2 className="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" />
                   <p>
-                    <strong>Option 1:</strong> Click the secure <strong>"Permanently Delete My Account"</strong> magic link inside the email to navigate automatically.
+                    <strong>Option 1:</strong> Click the secure{" "}
+                    <strong>"Permanently Delete My Account"</strong> magic link
+                    inside the email to navigate automatically.
                   </p>
                 </div>
                 <div className="flex gap-3">
                   <KeyRound className="w-5 h-5 text-[#2084ff] shrink-0 mt-0.5" />
                   <p>
-                    <strong>Option 2:</strong> Copy the 6-digit verification code and paste it on our verification portal.
+                    <strong>Option 2:</strong> Copy the 6-digit verification
+                    code and paste it on our verification portal.
                   </p>
                 </div>
               </div>

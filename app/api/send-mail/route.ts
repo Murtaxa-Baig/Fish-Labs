@@ -11,7 +11,7 @@ export async function POST(request: Request) {
     if (!firstName || !lastName || !email || !message) {
       return NextResponse.json(
         { error: "Missing required fields." },
-        { status: 400 }
+        { status: 400 },
       );
     }
 
@@ -24,7 +24,7 @@ export async function POST(request: Request) {
     });
 
     const html = `
-      <h2>New Contact Form Submission - Fish Labs</h2>
+      <h2>New Contact Form Submission - Music Lab</h2>
       <p><strong>Name:</strong> ${firstName} ${lastName}</p>
       <p><strong>Email:</strong> ${email}</p>
       <p><strong>Subject:</strong> ${subject || "No Subject"}</p>

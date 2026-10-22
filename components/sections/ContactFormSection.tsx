@@ -24,14 +24,14 @@ export const ContactFormSection: React.FC = () => {
   });
 
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">(
-    "idle"
+    "idle",
   );
   const [feedbackMsg, setFeedbackMsg] = useState("");
 
   const handleChange = (
     e: React.ChangeEvent<
       HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
-    >
+    >,
   ) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -70,7 +70,7 @@ export const ContactFormSection: React.FC = () => {
 
       setStatus("sent");
       setFeedbackMsg(
-        "Your message has been sent successfully! Our team will get back to you soon."
+        "Your message has been sent successfully! Our team will get back to you soon.",
       );
       setFormData({
         name: "",
@@ -96,16 +96,15 @@ export const ContactFormSection: React.FC = () => {
 
   return (
     <section className="relative w-full py-6 md:py-10 px-5 md:px-12 flex flex-col items-center bg-[#fafafa]">
-   
-
       {/* Editorial Header Block */}
       <div className="max-w-[65ch] text-center mb-12 flex flex-col items-center gap-3">
-
         <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-[#111827]">
           We're here to help
         </h1>
         <p className="text-base md:text-lg text-[#4b5563] leading-relaxed">
-          Have questions about Fish Labs, enterprise licenses, or technical acoustic support? Send us a message and our engineering team will get back to you within 24 hours.
+          Have questions about Music Lab, enterprise licenses, or technical
+          acoustic support? Send us a message and our engineering team will get
+          back to you within 24 hours.
         </p>
       </div>
 
@@ -128,7 +127,11 @@ export const ContactFormSection: React.FC = () => {
           </FormField>
 
           {/* Email Address */}
-          <FormField id="email-address" label="Email Address" rightLabel="Required">
+          <FormField
+            id="email-address"
+            label="Email Address"
+            rightLabel="Required"
+          >
             <input
               id="email-address"
               name="email"
@@ -154,10 +157,18 @@ export const ContactFormSection: React.FC = () => {
                 className="w-full appearance-none bg-[#f3f4f6] text-[#111827] text-sm rounded-lg px-4 py-3 pr-10 border border-[#e5e7eb] focus:bg-white focus:border-[#2084ff] focus:outline-none transition-all duration-200 cursor-pointer disabled:opacity-50"
               >
                 <option value="General Inquiry">General Inquiry</option>
-                <option value="Enterprise & Licensing">Enterprise &amp; Licensing</option>
-                <option value="Billing & Subscriptions">Billing &amp; Subscriptions</option>
-                <option value="Technical Acoustic Support">Technical Acoustic Support</option>
-                <option value="Strategic Partnership">Strategic Partnership</option>
+                <option value="Enterprise & Licensing">
+                  Enterprise &amp; Licensing
+                </option>
+                <option value="Billing & Subscriptions">
+                  Billing &amp; Subscriptions
+                </option>
+                <option value="Technical Acoustic Support">
+                  Technical Acoustic Support
+                </option>
+                <option value="Strategic Partnership">
+                  Strategic Partnership
+                </option>
               </select>
               <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-[#575e70]">
                 <ChevronDown className="w-5 h-5" />
@@ -205,8 +216,8 @@ export const ContactFormSection: React.FC = () => {
               {status === "sending"
                 ? "Sending..."
                 : status === "sent"
-                ? "Dispatched"
-                : "Send Message"}
+                  ? "Dispatched"
+                  : "Send Message"}
             </Button>
 
             {feedbackMsg && (
@@ -223,9 +234,6 @@ export const ContactFormSection: React.FC = () => {
           </div>
         </form>
       </div>
-
-   
-  
     </section>
   );
 };

@@ -11,16 +11,17 @@ export const Footer: React.FC = () => {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <Image
-                src="/images/logo-icon.svg"
-                alt="Fish Labs Logo"
+                src="/images/logo.png"
+                alt="Music Lab Logo"
                 width={36}
                 height={36}
                 className="h-9 w-auto object-contain"
               />
-              <span className="text-xl font-bold">Fish Labs</span>
+              <span className="text-xl font-bold">Music Lab</span>
             </div>
             <p className="text-gray-400 text-sm max-w-xs leading-relaxed">
-              The professional AI Voice Studio for creators. Transform, generate, and share high-fidelity audio projects.
+              The professional AI Voice Studio for creators. Transform,
+              generate, and share high-fidelity audio projects.
             </p>
           </div>
 

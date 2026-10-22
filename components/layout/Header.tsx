@@ -51,15 +51,15 @@ export const Header: React.FC = () => {
           <div className="flex items-center gap-2.5 min-w-0">
             <Link href="/" className="flex items-center gap-2.5 group">
               <Image
-                src="/images/logo-icon.svg"
-                alt="Fish Labs Logo"
+                src="/images/logo.png"
+                alt="Music Lab Logo"
                 width={36}
                 height={36}
                 className="h-9 w-auto object-contain transition-transform duration-200 group-hover:scale-105"
                 priority
               />
               <span className="text-xl font-bold tracking-tight text-[#111827]">
-                Fish Labs
+                Music Lab
               </span>
             </Link>
           </div>

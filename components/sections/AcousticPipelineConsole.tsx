@@ -18,7 +18,10 @@ export const AcousticPipelineConsole: React.FC = () => {
                 End-to-end fidelity without generational artifacts.
               </h3>
               <p className="text-sm text-[#4b5563] leading-relaxed">
-                Fish Labs integrates proprietary spectrogram reconstruction with zero-shot neural timbre mapping, rendering subtle breathing dynamics, emotional pitch shifts, and studio acoustics in real-time.
+                Music Lab integrates proprietary spectrogram reconstruction with
+                zero-shot neural timbre mapping, rendering subtle breathing
+                dynamics, emotional pitch shifts, and studio acoustics in
+                real-time.
               </p>
               <div className="flex flex-col gap-2.5 pt-2">
                 <SpecItem
@@ -55,7 +58,9 @@ export const AcousticPipelineConsole: React.FC = () => {
               {/* Source Waveform Bar Card */}
               <div className="bg-white p-4 rounded-lg border border-[#e5e7eb] shadow-xs flex flex-col gap-2">
                 <div className="flex justify-between items-center text-xs font-medium">
-                  <span className="text-[#111827]">Source Reference Profile</span>
+                  <span className="text-[#111827]">
+                    Source Reference Profile
+                  </span>
                   <span className="text-[#575e70] font-mono text-[11px]">
                     100% Raw Vocal
                   </span>
@@ -78,7 +83,7 @@ export const AcousticPipelineConsole: React.FC = () => {
               <div className="bg-white p-4 rounded-lg border border-[#e5e7eb] shadow-xs flex flex-col gap-2">
                 <div className="flex justify-between items-center text-xs font-medium">
                   <span className="text-[#2084ff] font-semibold">
-                    Fish Labs Synthesized Output
+                    Music Lab Synthesized Output
                   </span>
                   <span className="text-[#2084ff] font-mono text-[11px] font-bold">
                     99.8% Match
